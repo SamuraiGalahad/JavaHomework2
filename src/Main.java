@@ -1,5 +1,9 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println(System.getProperty("user.dir"));
+        FileSystemR fileSystemR = new FileSystemR(null);
+        fileSystemR.OpenRootFolder();
+        fileSystemR.SortByName();
+        fileSystemR.PrintFilesList();
+        fileSystemR.FilesMerging();
     }
 }
